@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import 'compass';
+@import 'compass/reset';
+$img-path: "../images/";
+$white: #fff;
+$skyblue: #7cbcf6;
+$gridtopmargin: 30px;
+$gridlargepadding:80px;
+
+@mixin box-sizing($type) {
+  box-sizing: $type;
+}
+* {
+  @include box-sizing(border-box);
+}
+html {
+  font-size: 14px;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","MS Gothic","ＭＳ ゴシック","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #565a5c;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h2 {
+  color: $white;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.btn:hover {
+  color: $white;
+  background: rgba(0, 0, 0, .5);
+}
+
+.kv-wrapper {
+  position: relative;
+}
+
+.keyvisual {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  background-image: url("#{$img-path}slide1.jpg");
+  background-position: 50% 50% !important;
+  background-size: auto 100% !important;
+}
+.kv-table {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+}
+
+.top-buffer {
+  margin-top: $gridtopmargin;
+}
+
+.kv-table-cell {
+  display: table-cell;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.topSearchBar {
+  position: absolute;
+  bottom: 0;
+  padding:20px;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  aside {
+    max-width: 960px;
+    margin: 0 auto;
+    #s {
+      width: 70%;
+      margin-left: 10%;
+      padding: 5px 10px;
+    }
+    #searchsubmit {
+    background-color: #11a2f4;
+    color: white;
+    border: 0;
+    padding: 8px 30px;
+    border-radius: 3px;
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+  }
+
+}
+
+
+.univ-table {
+  display: table;
+  width: 100%;
+}
+
+
+.waseda {
+  background-image: url("#{$img-path}waseda-univ.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  height: 344px;
+}
+
+.keio {
+  @extend .waseda;
+  background-image: url("#{$img-path}keio-univ.jpg");
+}
+
+.nichidai {
+  @extend .waseda;
+  background-image: url("#{$img-path}nihon-univ.jpg");
+  background-size: 100% auto;
+  height: 230px;
+}
+
+.hosei {
+  @extend .waseda;
+  background-image: url("#{$img-path}hosei-univ.jpg");
+  background-size: 100% auto;
+  height: 230px;
+}
+
+.meiji {
+  @extend .hosei;
+  background-image: url("#{$img-path}meiji-univ.jpg");
+}
+
+.aoyama {
+  @extend .hosei;
+  background-image: url("#{$img-path}aoyama-univ.jpg");
+}
+
+.sophia {
+  @extend .hosei;
+  background-image: url("#{$img-path}sophia-univ.jpg");
+}
+
+.chuo {
+  @extend .hosei;
+  background-image: url("#{$img-path}chuo-univ.jpg");
+}
+
+.univ-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.univ-name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $white;
+}
+
+.intro-waseda {
+    height: 600px;
+    background-position: 50% 20%;
+    background-image: url("../img/waseda-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.intro-p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.intro-sec-title {
+    color: maroon;
+    font-size: 2rem;
+    border-bottom: 1px solid maroon;
+    text-align: justify;
+}

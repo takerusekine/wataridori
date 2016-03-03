@@ -6,11 +6,14 @@
  */
 
 return array(
-	'default' => array(
-		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=fuel_test',
-			'username'   => 'fuel_app',
-			'password'   => 'super_secret_password',
-		),
-	),
+    'default' => array(
+        'connection'  => array(
+            'dsn'        => 'mysql:host=localhost;dbname=fuel_test',
+            'username'   => 'root',
+            'password'   => 'root',
+        ),
+        'charset' => 'utf8',
+        'collation' => 'utf8_general_ci',
+        'profiling' => true
+    ),
 );

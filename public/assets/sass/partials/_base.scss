@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import 'compass';
+
+$white: #fff;
+$darkerwhite: #f6f2f2;
+
+body {
+    max-width: 2560px;
+}
+.filter {
+    padding: 20px 0;
+    border-bottom: 1px solid #aaa;
+}
+.checkbox-label {
+    padding-left: 10px;
+}
+.js-height {
+    height: auto;
+    overflow-y: scroll;
+    max-height: 700px;
+}
+.slide-bar {
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+
+.whitebg {
+    background-color: $white;
+}
+
+.slider-bg {
+    background: #dce0e0;
+    height: 2px;
+    position: relative;
+    top: 14px;
+    width: 100%;
+}
+
+.slider-meter {
+    background-color: #ff5a5f;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+}
+
+.slide-handle {
+    border: 1px solid #aaa;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    height: 24px;
+    margin-left: -12px;
+    outline: none;
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+}
+
+#detail-menu {
+    display: none;
+}
+
+.darkerwhitebg{
+    background-color: $darkerwhite;
+}
+
+.img-fit {
+    width: 100%;
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.flex-container-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@for $i from 0 through 20 {
+    .tm-#{$i*5} {
+        margin-top: $i*5px;
+    }
+
+    .bm-#{$i*5} {
+        margin-bottom: $i*5px;
+    }
+
+    .tpad-#{$i*5} {
+        padding-top: $i*5px;
+    }
+
+    .bpad-#{$i*5} {
+        padding-bottom: $i*5px;
+    }
+    
+    .ml-#{$i*5} {
+        margin-left: $i*5px;
+    }
+    
+    .mr-#{$i*5} {
+        margin-right: $i*5px;
+    }
+    
+    .pl-#{$i*5} {
+        padding-left: $i*5px;
+    }
+    
+    .pr-#{$i*5} {
+        padding-right: $i*5px;
+    }
+} 
+
+.img-fit {
+    width: 100%;
+    height: auto;
+}
+
+.bukken-title {
+    font-size: 2rem;
+    &:hover {
+        color: #003f81;
+        text-decoration: underline;
+    }
+}
+
+.bukken-type {
+    border: 1px solid blue;
+    color:blue;
+    padding: 5px;
+}
+
+.rent {
+    color: #E74C3C;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.shikikin, .reikin {
+    position: relative;
+    padding-left: 23px;
+    line-height: 15px;
+    &::before {
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        content: '敷';
+        padding: 2px;
+        left: 0px;
+        top: -3px;
+        font-size: 1rem;
+    }
+}
+
+.reikin::before {
+    content: '礼';
+}
+
+.table-area {
+    border-bottom: 1px dotted #111;
+    border-top: 1px dotted #111;
+    padding: 5px 0;
+}
+
+.bukken-body {
+    tr{
+        td {
+            border-left: 1px dotted #111;
+            padding: 10px;
+            margin: 5px 0;
+            vertical-align: middle;
+            
+            &:first-child {
+                border-left: 0;
+            }
+        }
+    }
+}
+
+sup {
+    font-size: .8rem !important;
+}
+
+.t-border {
+    border-top: 3px solid maroon;
+}

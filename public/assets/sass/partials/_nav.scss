@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import 'compass';
+
+.topbar {
+  position: absolute;
+  height: 61px;
+  top: 0;
+  width: 100%;
+  .servicetitle {
+    line-height: 61px;
+    color: $white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .comp {
+    height: 61px;
+    padding: 0 19px;
+    a {
+      display: block;
+      color: $white;
+      line-height: 61px;
+    }
+  }
+  .owner {
+    border: 2px solid $white;
+    border-radius: 1px;
+    padding: 5px 10px;
+  }
+}
+
+.topbar-lower {
+  height: 61px;
+  top: 0;
+  background-color: maroon;
+  .servicetitle {
+    line-height: 61px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .comp {
+    height: 61px;
+    padding: 0 19px;
+    a {
+      display: block;
+      color: white;
+      line-height: 61px;
+    }
+  }
+  .owner {
+    border: 2px solid white;
+    border-radius: 1px;
+    padding: 5px 10px;
+  }
+}
+
+.float-right {
+  float: right;
+}

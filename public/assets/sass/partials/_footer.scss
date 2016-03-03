@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import 'compass';
+
+$footerbg: #262626;
+
+.footerpadding {
+  padding: $gridlargepadding 0;
+  background-color: maroon;
+  margin-top: $gridtopmargin;
+}
+
+footer {
+    color: white;
+}
+
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

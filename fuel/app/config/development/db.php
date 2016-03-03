@@ -4,11 +4,17 @@
  */
 
 return array(
-	'default' => array(
-		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=fuel_dev',
-			'username'   => 'root',
-			'password'   => 'root',
-		),
-	),
+    'default' => array(
+		'type' => 'pdo',
+        'connection'  => array(
+            'dsn'        => 'mysql:host=localhost;dbname=wataridori_dev',
+//unix_socketを指定',
+            'username'   => 'root',
+            'password'   => 'root',
+        ),
+        'charset' => 'utf8',
+        'collation' => 'utf8_general_ci',
+        'profiling' => true
+
+    ),
 );
